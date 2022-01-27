@@ -1,0 +1,12 @@
+#draws 60 squares by rotating each 5 degrees to form a circle of squares
+from turtle import*
+shape('turtle')
+def square(side):
+  for i in range(4):
+    forward(side)
+    right(90)
+
+def squareRotator(side):
+  for i in range(60):
+    square(side)
+    right(5)
