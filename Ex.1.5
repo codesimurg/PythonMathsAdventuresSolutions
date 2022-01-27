@@ -1,0 +1,17 @@
+from turtle import*
+shape('turtle')
+speed(0)
+
+def square(sideLength):
+  for i in range(4):
+    forward(sideLength)
+    right(90)
+    
+def squareSpiral(sideLength):
+  for i in range(60):
+    square(sideLength)
+    right(5)
+    sideLength += 5
+
+sideLength = 5
+squareSpiral(sideLength)
