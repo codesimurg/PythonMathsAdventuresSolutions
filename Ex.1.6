@@ -1,0 +1,12 @@
+from turtle import*
+shape('turtle')
+speed(0)
+def star(sideLength):
+  for i in range(5):
+    forward(sideLength)
+    right(145)
+ def starSpiral(sideLength):
+    for i in range(60):
+        star(sideLength)
+        right(2)
+        sideLength += 5
