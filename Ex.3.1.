@@ -17,7 +17,7 @@ def gcd(a, b):
   factorsA = factor(a)
   factorsB = factor(b)
   commonFactors = []
-  for j in b:
-    if j in a:
+  for j in factorsB:
+    if j in factorsA:
       commonFactors.append(j)
   return max(commonFactors)
