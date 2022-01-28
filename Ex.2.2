@@ -3,3 +3,20 @@
 def sumList(list):
   sum(list)/len(list)
   
+#more explicit approach
+#define a sum and a length function to use for average
+def sumList(list):
+  sum = 0
+  for i in list:
+    sum += i
+  return sum
+  
+def lenList(list):
+  count = 0
+  for i in list:
+    count += 1
+  return count
+  
+def average(list):
+  return sumList(list) / lenList(list)
+  
