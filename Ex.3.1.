@@ -5,4 +5,19 @@ def factor(a):
     if a % i == 0:
       factor.append(i)
   return factor
+
+def max(l):
+  max = 0
+  for i in l:
+    if i > max:
+      max = i
+  return max
+  
 def gcd(a, b):
+  factorsA = factor(a)
+  factorsB = factor(b)
+  commonFactors = []
+  for j in b:
+    if j in a:
+      commonFactors.append(j)
+  return max(commonFactors)
