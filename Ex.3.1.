@@ -1,0 +1,8 @@
+#finds greatest common factor of two numbers
+def factor(a):
+  factor = []
+  for i in range(1, a+1):
+    if a % i == 0:
+      factor.append(i)
+  return factor
+def gcd(a, b):
